@@ -1,0 +1,18 @@
+OpenSSL Heartbleed Tester
+=========================
+
+To download and build the executable run:
+
+go get github.com/mxk/go-tlshb/tlshb
+
+Usage: tlshb [options] host:port
+
+  -n=16: number of bytes to request
+  -o="": write binary data to the specified file
+  -q=false: quiet, use exit code to report server status (0=safe)
+  -t=5s: i/o timeout
+
+This program was written to help system administrators test their
+servers for the OpenSSL "heartbleed" vulnerability. The author is not
+responsible for any damages as a result of using this tool (may eat your
+data, etc.) or for any misuse of this tool for malicious purposes.
